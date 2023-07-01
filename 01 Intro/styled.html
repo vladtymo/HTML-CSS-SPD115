@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Intro</title>
+    <style>
+        /* ------------------- CSS ------------------- */
+        /* CSS selector syntax:
+            selector {
+                property: value;
+                property: value;
+            }    
+        */
+
+        /* -------- tag selectors -------- */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-transform: uppercase;
+            border-radius: 6px;
+        }
+
+        p {
+            background-color: rgb(235, 235, 235);
+            padding: 4px;
+            border-radius: 6px;
+        }
+
+        mark {
+            background-color: transparent;
+            font-family: cursive;
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        kbd {
+            background-color: white;
+            color: black;
+            padding: 6px;
+            border-radius: 4px;
+            box-shadow: 0px 0px 6px black;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        /* -------- class selectors -------- */
+        .important {
+            font-size: larger;
+            text-decoration: underline;
+            color: brown;
+        }
+
+        .styled {
+            font-family: fantasy;
+            text-shadow: 1px 1px 5px black;
+            color: lightcyan;
+            font-size: larger;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Introduction to CSS</h1>
+
+    <!-- Inline styles: <tag style="..."> -->
+    <h4 style="color: darkslateblue; text-transform: uppercase;">The language we use to style an HTML document. CSS
+        describes how
+        HTML elements should be <span class="styled">displayed</span>.</h4>
+
+    <!-- span - inline text tag without any styles -->
+    <p>This is the first paragraph!</p>
+    <p><strong class="important">Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Totam laborum maxime
+        repudiandae aperiam nam voluptate
+        blanditiis <strong class="important">distinctio</strong> nisi. Reiciendis dicta, laudantium vitae molestiae fuga
+        <span class="styled important">nesciunt dolorem</span>
+        culpa veniam
+        <span class="styled">sapiente</span> amet.
+    </p>
+
+    <h2>Logical Tags (strong, em...)</h2>
+    <p>The <strong>HyperText Markup Language</strong> or HTML is the standard <em>markup language</em> for documents
+        designed to
+        be displayed in a
+        web browser.</p>
+
+    <hr>
+    <p>
+        Use <ins class="important">abbr</ins> tag for abbreviations instead of <del>acronym</del> tag!<br>
+    </p>
+    <p>
+        <abbr title="Cascading Style Sheets">CSS</abbr> is used for describing the presentation of a document written in
+        a
+        markup language such as HTML or XML.
+    </p>
+
+    <h3>You can find us</h3>
+    <address>Soborna St, 16 ... Rinve, Ukraine</address>
+
+    <h3>Inline Quote</h3>
+    <p>Here's an example: <q>Fourscore and seven years ago</q> — is the beginning of Lincoln's Gettysburg Address, which
+        many of us had to memorize in high school.</p>
+    <h3>Block Quote</h3>
+    <p>It is a block quote:</p>
+    <blockquote>To be or not to be!</blockquote>
+
+    <hr>
+    <p>
+        <strong>Tag mark:</strong> This is a <mark>highlited</mark> text!<br>
+        <strong>Tag dfn:</strong> <dfn>Programming language</dfn> - system of notation for writing computer
+        programs.<br>
+        <strong>Tag sub:</strong> Formula of water: H<sub>2</sub>O<br>
+        <strong>Tag sup:</strong> Pythagorean theorem: C<sup>2</sup> = A<sup>2</sup> + B<sup>2</sup>
+        <strong>Tag var:</strong> description: <var>C</var> - hypotenuse being<br>
+        <strong>Tag samp:</strong> Try to find a solution: <samp>2 + 2 * 2</samp><br>
+        <strong>Tag kbd:</strong> Open command pallete shortcut: <kbd>Ctrl + Shift + P</kbd><br>
+        <strong>Tag code:</strong> for loop <code>for (int i = 0; i &lt; 10; ++i) { ... }</code>
+    </p>
+
+    <h3>Preformatted Text</h3>
+    <pre>
+        Line 1
+            Tab Line 2
+                        ...
+    </pre>
+
+    <div>
+        <img width="300" src="https://miro.medium.com/v2/resize:fit:792/1*lJ32Bl-lHWmNMUSiSq17gQ.png" alt="HTML CSS">
+    </div>
+</body>
+
+</html>
