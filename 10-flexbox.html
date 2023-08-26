@@ -23,12 +23,12 @@
             /* вирівнювання елементів по поперечеій осі (stretch) */
             align-items: center;
             /* встановлення переносу елементів при нехватці місця (nowrap) */
-            /* flex-wrap: wrap; */
+            flex-wrap: wrap;
             /* вирівнювання рівнів елементів при наявності декількох рядків або колонок (stretch) */
-            /* align-content: space-around; */
+            align-content: space-around;
 
             /* загальна властивість яка включає параметри: flex-direction || flex-wrap */
-            /* flex-flow: row wrap; */
+            flex-flow: row wrap;
         }
 
         .item {
@@ -40,40 +40,39 @@
             border: 1px solid rgb(0, 107, 107);
 
             /* width/height: content + padding + border */
-            /* box-sizing: border-box; */
+            box-sizing: border-box;
 
             /* flex-basis: 50%; */
 
             /* загальна властивість яка включає параметри: flex-grow || flex-shrink || flex-basis */
-            /*flex: 1;         flex-grow */
-            /*flex: 1 1;       flex-grow flex-shrink */
-            /*flex: 1 10%;     flex-grow flex-basis */
-            /*flex: 0 1 auto;  default value for flex-grow flex-shrink flex-basis */
+            flex: 1;         /* flex-grow */
+            flex: 1 1;       /* flex-grow flex-shrink */
+            flex: 1 10%;     /* flex-grow flex-basis */
+            flex: 0 1 auto;  /* default value for flex-grow flex-shrink flex-basis */
         }
 
         .item:nth-child(1) {
             /* коефіцієнт розширенння елемента при нявності вільного місця (0) */
-            /* flex-grow: 1; */
+            flex-grow: 1;
             /* коефіцієнт звуження елемента при нехватці місця (1) */
-            /* flex-shrink: 0; */
+            flex-shrink: 0;
         }
 
         .item:nth-child(2) {
             /* вирівнювання окремого елемента по головній осі */
-            /* align-self: flex-end; */
+            align-self: flex-end;
         }
 
         .item:nth-child(3) {
-            /* flex-grow: 3; */
-            /* min-width: 100px; */
-            /* max-width: 150px; */
+            min-width: 100px;
+            max-width: 150px;
             /* ширина елемента */
-            /* flex-basis: 50%; */
+            flex-basis: 50%;
         }
 
         .item:nth-child(4) {
             /* зміна порядку розміщення елемента (0) */
-            /* order: -1; */
+            order: -1;
         }
 
         /* Example of row with 3 columns */
