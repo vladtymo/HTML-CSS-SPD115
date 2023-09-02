@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        form {
+            border: 1px solid gray;
+            margin-top: 10px;
+            padding: 10px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .stretch-last {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .stretch-last :last-child {
+            flex-grow: 1;
+        }
+
+        button.styled {
+            background-color: gray;
+            color: white;
+            border: none;
+            padding: 10px;
+            text-transform: uppercase;
+            transition: 0.1s;
+        }
+        button.styled:hover {
+            box-shadow: 2px 2px 8px black;
+        }
+
+        input.styled {
+            background-color: antiquewhite;
+            color: black;
+            border: none;
+            outline: none;
+            padding: 10px;
+        }
+
+        input.styled:focus {
+            box-shadow: inset 1px 1px 6px black;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Order Form</h2>
+        <div class="stretch-last">
+            <label>Name:</label>
+            <input type="text" placeholder="Enter name">
+        </div>
+
+        <div class="stretch-last">
+            <label>Email address:</label>
+            <input type="email" placeholder="Enter email">
+        </div>
+        <div>
+            <label accesskey="j">
+                <span>Check Me</span>
+                <input type="checkbox">
+            </label>
+        </div>
+       <input type="color" name="" id="">
+       <input type="date" name="" id="">
+       <input type="file" name="" id="">
+       <input type="number" min="100" max="500" step="50">
+       <input type="password" name="" id="">
+       <input type="week" name="" id="">
+       <input class="styled" type="url" name="" id="">
+
+       <button type="reset">Reset</button>
+       <button class="styled" type="submit">Submit</button>
+    </form>
+
+    <script>
+        const submitBtn = document.querySelector('button[type=submit]');
+
+        submitBtn.onclick = (event) => {
+            event.preventDefault();
+
+            alert("Good!");
+        }
+    </script>
+</body>
+</html>
